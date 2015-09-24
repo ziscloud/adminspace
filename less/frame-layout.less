@@ -1,0 +1,57 @@
+
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#layout {
+  padding: @header-height 0 @footer-height 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+#body {
+  height: 100%;
+  min-height: 100%;
+  background-color: green;
+  overflow: hidden;
+}
+
+#left-side, #right-side {
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+
+#left-side {
+  width: @left-side-width;
+  float: left;
+  background-color: @left-side-bg;
+}
+
+#right-side {
+  widht: 100%;
+  margin-left: 100px;
+}
+
+#clearfix {
+  display: none;
+  clear: both;
+}
+
+header {
+  margin-top: -@header-height;
+  height: @header-height;
+}
+
+footer {
+  margin-bottom: -@footer-height;
+  height: @footer-height;
+  background-color: red;
+}
