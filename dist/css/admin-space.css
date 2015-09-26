@@ -1397,7 +1397,7 @@ header .navbar-brand {
   width: 100%;
   line-height: 50px;
   padding: 0px;
-  z-index: 9000;
+  z-index: 1;
 }
 .content-header.with-border {
   border-bottom: 1px solid #f4f4f4;
