@@ -12,5 +12,8 @@ $(function () {
     //Enable sidebar tree view controls
     $('#left-side').treeMenu();
     //Enable the nice scroll bar
-    $('#left-side').niceScroll({scrollspeed:100,mousescrollstep:15,cursorborder:'1px solid #868688'});
+    var scrollOpts = {scrollspeed: 100, mousescrollstep: 15, cursorborder: '1px solid #868688'};
+    $('#left-side').niceScroll(scrollOpts);
+    $('.filter-col').niceScroll(scrollOpts);
+    $('.content-col').niceScroll(scrollOpts);
 });

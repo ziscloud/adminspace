@@ -1,0 +1,72 @@
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+//Content Header
+.content-header {
+  color: #444;
+  display: block;
+  position: absolute;
+  width: 100%;
+  line-height: 50px;
+  padding: 0px;
+  z-index: 9000;
+
+  //Add bottom border
+  &.with-border {
+    border-bottom: 1px solid @box-border-color;
+    .collapsed-box & {
+      border-bottom: none;
+    }
+  }
+
+  //Icons and box title
+  > .fa,
+  > .glyphicon,
+  > .ion,
+  .content-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+  }
+  > .fa,
+  > .glyphicon,
+  > .ion {
+    margin-right: 5px;
+  }
+
+  .nav li a {
+    padding: 15px 8px;
+  }
+
+  .container-fluid, .container-fluid div {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.content-body {
+  width: 100%;
+  height: 100%;
+  padding-top: 51px;
+
+  .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+    .filter-col {
+      height: 100%;
+      border-right: 1px solid #f0f0f1;
+      padding: 5px 5px 0px 5px;
+    }
+
+    .content-col {
+      height: 100%;
+      padding: 5px 5px 0px 5px;
+    }
+  }
+}
