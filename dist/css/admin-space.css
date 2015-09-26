@@ -542,7 +542,7 @@ body {
   margin: 0;
 }
 #layout {
-  padding: 50px 0 30px 0;
+  padding: 50px 0 0 0;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -576,14 +576,6 @@ body {
 header {
   margin-top: -50px;
   height: 50px;
-}
-footer {
-  margin-bottom: -30px;
-  height: 30px;
-  background: #fff;
-  padding: 5px;
-  color: #444;
-  border-top: 1px solid #d2d6de;
 }
 /*
  * Skin: Blue
