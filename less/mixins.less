@@ -103,9 +103,7 @@
 
 .skin-sidebar(@link-hover-border-color) {
   // Sidebar background color (Both .wrapper and .left-side are responsible for sidebar bg color)
-  .wrapper,
-  .main-sidebar,
-  .left-side {
+  #left-side {
     background-color: @left-side-bg;
   }
   //User Panel (resides in the sidebar)
@@ -138,9 +136,9 @@
     }
   }
   //All links within the sidebar menu
-  .sidebar a {
+  #left-side a {
     color: @left-side-color;
-    &:hover {
+    &:hover, &:focus {
       text-decoration: none;
     }
   }

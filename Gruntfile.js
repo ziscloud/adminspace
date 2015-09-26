@@ -42,7 +42,8 @@ module.exports = function (grunt) {
       },
       my_target: {
         files: {
-          'dist/js/admin.space.min.js': ['dist/js/admin.space.js']
+          'dist/js/admin.space.min.js': ['js/admin.space.js'],
+          'dist/js/jquery.treemenu.min.js': ['js/jquery.treemenu.js'],
         }
       }
     },
